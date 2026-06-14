@@ -77,7 +77,7 @@
       <div class="content">
         <ul>
           <li>
-            <b>[April 2026]</b>: My open-source tutorials on VLA (<a href="https://github.com/jeongeun980906/lerobot-mujoco-tutorial">LeRobot-MuJoCo Tutorial</a>, <a href="https://github.com/jeongeun980906/Lerobot-MujoCo-VLA-Tutorial">LeRobot-MuJoCo-VLA Tutorial</a>) gained significant community interest with <b>446 stars in total</b> on GitHub!
+            <b>[April 2026]</b>: My open-source tutorials on VLA (<a href="https://github.com/jeongeun980906/lerobot-mujoco-tutorial">LeRobot-MuJoCo Tutorial</a>, <a href="https://github.com/jeongeun980906/Lerobot-MujoCo-VLA-Tutorial">LeRobot-MuJoCo-VLA Tutorial</a>) gained significant community interest with <b><span id="github-star-count">446</span> stars in total</b> on GitHub!
           </li>
           <li>
             <b>[March 2026]</b>: I gave a talk about robot foundation models at <a href="https://www.lgcns.com/en">LG CNS</a>.
@@ -139,6 +139,59 @@
         </ul>
       </div>
       <h2 class="title is-3">Publications</h2>
+
+        <div class="publication-block columns">
+
+        <div class="column is-2">
+          <div class="publication-image publication-mousecell">
+
+            <video autoplay preload playsinline class="" height="100%" loop muted width="100%" style="display: none;">
+              <source src="./images/recap_after.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <img alt="Retrieve, Don't Retrain: Extending Vision-Language-Action Models to New Tasks at Test Time" src="./images/recap_before.png" style="display: inline-block;"/>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h3 class="publication-title"><a href="https://recap-robot.github.io/">Retrieve, Don't Retrain: Extending Vision-Language-Action Models to New Tasks at Test Time</a></h3>
+            <div class="publication-authors">
+              <span class="author-block author-me">
+                Jeongeun Park,
+              </span>
+              <span class="author-block ">
+                <a href="https://juhan-park-page.github.io/"> Juhan Park</a>,
+              </span>
+              <span class="author-block ">
+                <a href="https://taekyungkim918.github.io/"> Taekyung Kim</a>,
+              </span>
+              <span class="author-block ">
+                <a href="https://sites.google.com/view/sungjoon-choi/home"> Sungjoon Choi</a>,
+              </span>
+              <span class="author-block ">
+                <a href="https://sites.google.com/site/dyhan0920/"> Dongyoon Han</a>,
+              </span>
+              <span class="author-block ">
+                <a href="https://sangdooyun.github.io/"> Sangdoo Yun</a>
+              </span>
+            </div>
+            <div class="publication-venue">
+              <span> Preprint, 2026 </span>
+            </div>
+            <p class="publication-description">
+              ReCAP is a retrieval-augmented policy that adapts vision-language-action models to new tasks at deployment without retraining: the frozen policy conditions on retrieved trajectories at every control step, so new tasks are absorbed by indexing data rather than updating parameters.
+            </p>
+            <!-- Publication Links. -->
+            <div class="publication-links buttons field has-addons">
+              <a class="external-link button is-small is-ghost" href="https://recap-robot.github.io/">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <span>Project Page</span>
+              </a>
+            </div>
+            <!--/ Publication Links. -->
+          </div>
+        </div>
+      </div>
 
         <div class="publication-block columns">
 
@@ -210,6 +263,52 @@
               <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/2604.04138">
                 <span class="icon"><i class="ai ai-arxiv"></i></span>
                 <span>arXiv</span>
+              </a>
+            </div>
+            <!--/ Publication Links. -->
+          </div>
+        </div>
+      </div>
+
+       <div class="publication-block columns">
+
+        <div class="column is-2">
+          <div class="publication-image publication-mousecell">
+            <img alt="Pose Estimation of Transparent Objects via Depth Completion and Confidence-Guided Registration" src="./images/viguic_before.png" style="display: inline-block;"/>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h3 class="publication-title"><a href="https://keep1617.github.io/transparent-object-pose-VIUGIC/">Pose Estimation of Transparent Objects via Depth Completion and Confidence-Guided Registration</a></h3>
+            <div class="publication-authors">
+              <span class="author-block author-me">
+                Jeongeun Park<sup>*</sup>,
+              </span>
+              <span class="author-block ">
+                Yeoncheol Jang<sup>*</sup>,
+              </span>
+              <span class="author-block ">
+                Changin Kim,
+              </span>
+              <span class="author-block ">
+                Youngjoon Yoo,
+              </span>
+              <span class="author-block ">
+                <a href="https://sites.google.com/view/sungjoon-choi/home"> Sungjoon Choi</a>
+              </span>
+              <span class="author-block is-size-7" style="display:block;"><sup>*</sup> Equal contribution</span>
+            </div>
+            <div class="publication-venue">
+              <span> Preprint, 2026 </span>
+            </div>
+            <p class="publication-description">
+              VIUGIC is a framework for transparent-object pose estimation that combines depth completion with uncertainty-aware registration, using confidence scores to down-weight unreliable depth predictions near refractive boundaries.
+            </p>
+            <!-- Publication Links. -->
+            <div class="publication-links buttons field has-addons">
+              <a class="external-link button is-small is-ghost" href="https://keep1617.github.io/transparent-object-pose-VIUGIC/">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <span>Project Page</span>
               </a>
             </div>
             <!--/ Publication Links. -->
@@ -1036,6 +1135,30 @@ states and scores candidate subgoals using both success and failure data.</p>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Live GitHub star count for the VLA tutorial repos
+    (function () {
+      var repos = [
+        'jeongeun980906/lerobot-mujoco-tutorial',
+        'jeongeun980906/Lerobot-MujoCo-VLA-Tutorial'
+      ];
+      var el = document.getElementById('github-star-count');
+      if (!el) return;
+      Promise.all(repos.map(function (repo) {
+        return fetch('https://api.github.com/repos/' + repo)
+          .then(function (res) { return res.ok ? res.json() : null; })
+          .then(function (data) { return data ? (data.stargazers_count || 0) : null; })
+          .catch(function () { return null; });
+      })).then(function (counts) {
+        // Only update if every request succeeded; otherwise keep the static fallback.
+        if (counts.indexOf(null) === -1) {
+          var total = counts.reduce(function (a, b) { return a + b; }, 0);
+          el.textContent = total;
+        }
+      });
+    })();
+  </script>
 
 </body>
 
