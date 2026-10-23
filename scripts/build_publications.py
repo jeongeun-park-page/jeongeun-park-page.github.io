@@ -1,6 +1,7 @@
 """Generate the static site: python3 scripts/build_publications.py."""
 from pathlib import Path
 import json
+from html import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 TAGS = {
@@ -20,7 +21,7 @@ for record in records:
     assert all(tag in TAGS for tag in record['tags']), record['id']
 
 def navigation(active):
-    links = [('home', 'index.html', 'Home'), ('year', 'publications.html', 'By year'), ('topic', 'publications-by-topic.html', 'By tag')]
+    links = [('home', 'index.html', 'Home'), ('year', 'publications.html', 'By year'), ('topic', 'publications-by-topic.html', 'By tag'), ('open-source', 'open-source.html', 'Open Source')]
     items = []
     for key, url, label in links:
         current = ' aria-current="page"' if key == active else ''
@@ -57,4 +58,42 @@ for mode, filename in [('year', 'publications.html'), ('topic', 'publications-by
         content += f'<section aria-labelledby="group-{key}"><h2 class="title is-4 publication-group" id="group-{key}">{label} <span class="group-count">({len(group)})</span></h2>' + ''.join(card(r, key) for r in group) + '</section>'
     page = head.replace('<title>Jeongeun Park</title>', f'<title>Publications by {"tag" if mode == "topic" else mode} | Jeongeun Park</title>') + '<body>\n' + navigation(mode) + '<main id="main-content" class="site-main"><section class="section"><div class="container is-max-desktop"><h1 class="title is-2">Publications</h1><p class="publication-intro">Browse all publications by year or research tag.</p>' + tabs(mode) + jumps + content + '</div></section></main>\n' + footer + '</body>\n</html>\n'
     (ROOT / filename).write_text(page)
-print(f'Generated home and two publication pages from {len(records)} publications.')
+projects = sorted(
+    json.loads((ROOT / 'data/open-source.json').read_text()),
+    key=lambda project: project['date'],
+    reverse=True,
+)
+project_cards = []
+for project in projects:
+    name = escape(project['name'])
+    repository = escape(project['repository'], quote=True)
+    description = escape(project['description'])
+    if project.get('image'):
+        image = escape(project['image'], quote=True)
+        image_alt = escape(project['image_alt'], quote=True)
+        preview = f'<a class="project-demo" href="https://github.com/{repository}"><img src="{image}" alt="{image_alt}" loading="lazy"></a>'
+    else:
+        preview = '<div class="project-demo project-demo-placeholder" aria-hidden="true"><i class="fab fa-github"></i></div>'
+    topics = ''.join(f'<span>{escape(topic)}</span>' for topic in project['topics'])
+    project_cards.append(
+        '<article class="open-source-card">'
+        + preview
+        + f'<h2 class="title is-4"><a href="https://github.com/{repository}">{name}</a></h2>'
+        f'<p class="repository-name">{repository}</p>'
+        f'<p class="project-description">{description}</p>'
+        f'<div class="project-topics">{topics}</div>'
+        f'<a class="project-link" href="https://github.com/{repository}">View on GitHub &rarr;</a>'
+        '</article>'
+    )
+open_source = (
+    head.replace('<title>Jeongeun Park</title>', '<title>Open Source | Jeongeun Park</title>')
+    + '<body>\n' + navigation('open-source')
+    + '<main id="main-content" class="site-main"><section class="section"><div class="container is-max-desktop">'
+    + '<div class="section-heading"><h1 class="title is-2">Open Source</h1>'
+    + '<a href="https://github.com/jeongeun980906">GitHub profile &rarr;</a></div>'
+    + '<p class="publication-intro">Tools, tutorials, and reference implementations for robotics and machine learning. Code associated with my publications is not included here.</p>'
+    + '<div class="open-source-grid">' + ''.join(project_cards) + '</div>'
+    + '</div></section></main>\n' + footer + '</body>\n</html>\n'
+)
+(ROOT / 'open-source.html').write_text(open_source)
+print(f'Generated home, two publication pages, and Open Source ({len(projects)} projects).')

@@ -190,3 +190,55 @@ a:focus-visible { outline: 2px solid #15803d; outline-offset: 4px; }
     color: #166534;
     border-color: #9abdA6;
 }
+
+.open-source-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+.open-source-card {
+    padding: 16px;
+    min-width: 0;
+    border: 1px solid #dce5df;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.project-demo {
+    display: block;
+    align-self: stretch;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f3f7f4;
+}
+.project-demo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 800 / 571;
+    object-fit: contain;
+}
+.open-source-card .title { margin-bottom: 8px; line-height: 1.4; font-size: 1rem; overflow-wrap: anywhere; }
+.open-source-card .title a { color: #222; }
+.open-source-card .title a:hover { color: #15803d; }
+.repository-name { font-size: .7rem; color: #777; overflow-wrap: anywhere; }
+.project-description { margin: 14px 0; line-height: 1.6; font-size: .8rem; }
+.project-topics { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 16px; }
+.project-topics span { background: #f3f7f4; color: #486453; font-size: .65rem; padding: 3px 7px; border-radius: 12px; }
+.project-link { margin-top: auto; color: #15803d; font-weight: 600; font-size: .8rem; }
+@media screen and (max-width: 1000px) {
+    .open-source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media screen and (max-width: 540px) {
+    .open-source-grid { grid-template-columns: minmax(0, 1fr); }
+}
+.project-demo-placeholder {
+    aspect-ratio: 800 / 571;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7b9b86;
+    font-size: 40px;
+}

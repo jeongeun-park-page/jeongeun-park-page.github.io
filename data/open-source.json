@@ -1,0 +1,161 @@
+[
+  {
+    "name": "LeRobot–MuJoCo–VLA Tutorial",
+    "repository": "jeongeun980906/Lerobot-MujoCo-VLA-Tutorial",
+    "description": "An end-to-end workflow for training and evaluating vision-language-action policies, from teleoperation and dataset preparation to custom policy integration. Includes π₀.₅ and GR00T N1.5.",
+    "topics": [
+      "Vision-Language-Action",
+      "MuJoCo",
+      "Tutorial"
+    ],
+    "image": "images/lerobot_vla_demo.gif",
+    "image_alt": "Pi-0.5 robot policy evaluation in MuJoCo",
+    "date": "2025-12-04"
+  },
+  {
+    "name": "JiT Unofficial Light",
+    "repository": "jeongeun980906/jit-unofficial-light",
+    "description": "A lightweight, unofficial JiT implementation with a Colab toy demo exploring prediction spaces and loss functions for denoising generative models.",
+    "topics": [
+      "Generative Models",
+      "PyTorch",
+      "Colab"
+    ],
+    "date": "2025-11-24",
+    "image": "images/open-source-jit-unofficial-light.png",
+    "image_alt": "JiT toy experiment comparing denoising model configurations"
+  },
+  {
+    "name": "CoTaP Failure Detection",
+    "repository": "jeongeun980906/CoTaP-Failure-Detection",
+    "description": "Detect success or failure in robot manipulation videos and localize when a failure occurs, using frame, text, video, or hybrid inputs.",
+    "topics": [
+      "Robot Learning",
+      "Failure Detection"
+    ],
+    "date": "2025-11-20",
+    "image": "images/open-source-cotap-failure-detection.png",
+    "image_alt": "Comparison of robot task verification results"
+  },
+  {
+    "name": "Uncertainty-Aware Gaussian Mixture Flow Matching",
+    "repository": "jeongeun980906/Uncertainty-Aware-Gaussian-Mixture-Flow-Matching",
+    "description": "A notebook tutorial for learning 2D trajectories with Gaussian mixture flow matching and visualizing aleatoric and epistemic uncertainty.",
+    "topics": [
+      "Flow Matching",
+      "Uncertainty",
+      "Tutorial"
+    ],
+    "date": "2025-04-24",
+    "image": "images/open-source-uncertainty-aware-gaussian-mixture-flow-matching.png",
+    "image_alt": "Gaussian mixture flow matching trajectories and uncertainty visualizations"
+  },
+  {
+    "name": "LeRobot–MuJoCo Tutorial",
+    "repository": "jeongeun980906/lerobot-mujoco-tutorial",
+    "description": "Hands-on examples for collecting demonstrations, training policies, and deploying them in MuJoCo with LeRobot. Includes ACT, π₀, and SmolVLA.",
+    "topics": [
+      "MuJoCo",
+      "LeRobot",
+      "Imitation Learning"
+    ],
+    "image": "images/lerobot_mujoco_demo.gif",
+    "image_alt": "Keyboard teleoperation and demonstration collection in MuJoCo",
+    "date": "2025-03-27"
+  },
+  {
+    "name": "Flow Matching with PPO Fine-tuning",
+    "repository": "jeongeun980906/Flow-matching-model-PPO-Finetune",
+    "description": "A tutorial on reinforcement learning fine-tuning of flow matching models, with toy examples for unlearning and improving sample fidelity.",
+    "topics": [
+      "Flow Matching",
+      "Reinforcement Learning",
+      "Tutorial"
+    ],
+    "date": "2025-02-05",
+    "image": "images/open-source-flow-matching-model-ppo-finetune.png",
+    "image_alt": "Flow matching samples after PPO fine-tuning"
+  },
+  {
+    "name": "Uncertainty Estimation Baselines",
+    "repository": "jeongeun980906/Uncertainty-Estimation-Baselines",
+    "description": "Reference notebooks for uncertainty estimation, out-of-distribution detection, and calibration, including Gaussian processes, dropout, energy scores, and mixture logit networks.",
+    "topics": [
+      "Uncertainty",
+      "OOD Detection",
+      "Baselines"
+    ],
+    "date": "2022-10-07"
+  },
+  {
+    "name": "Pioneer Playground",
+    "repository": "jeongeun980906/pioneer_playground",
+    "description": "A ROS Noetic and Gazebo playground for a Pioneer mobile robot in a simulated house, with camera, depth, and lidar interfaces.",
+    "topics": [
+      "ROS",
+      "Gazebo",
+      "Navigation"
+    ],
+    "date": "2022-06-27",
+    "image": "images/open-source-pioneer_playground.png",
+    "image_alt": "Pioneer mobile robot in the Gazebo house environment"
+  },
+  {
+    "name": "Robust Learning Baselines",
+    "repository": "jeongeun980906/Robust_Learning_Baseline",
+    "description": "A collection of label-noise learning implementations, including noise adaptation, forward correction, Co-teaching, JoCoR, and DivideMix.",
+    "topics": [
+      "Robust Learning",
+      "Label Noise",
+      "Baselines"
+    ],
+    "date": "2022-04-19"
+  },
+  {
+    "name": "CenterNet–MDN",
+    "repository": "jeongeun980906/Centernet-MDN",
+    "description": "An adaptation of CenterNet with a mixture density network, with qualitative visualizations of epistemic and aleatoric uncertainty.",
+    "topics": [
+      "Object Detection",
+      "Uncertainty"
+    ],
+    "date": "2021-09-27",
+    "image": "images/open-source-centernet-mdn.png",
+    "image_alt": "CenterNet mixture density network uncertainty results"
+  },
+  {
+    "name": "Active Learning Baselines",
+    "repository": "jeongeun980906/ActiveLearning_Baseline",
+    "description": "Active learning baselines for MNIST and CIFAR-10, including uncertainty-based querying, greedy core-set selection, and BALD.",
+    "topics": [
+      "Active Learning",
+      "Baselines"
+    ],
+    "date": "2021-08-09"
+  },
+  {
+    "name": "Dynamic RRT",
+    "repository": "jeongeun980906/dynamic_rrt",
+    "description": "RRT and RRT* path planning examples with moving obstacles, including visualizations of search-tree construction.",
+    "topics": [
+      "Motion Planning",
+      "RRT",
+      "Navigation"
+    ],
+    "date": "2021-03-24",
+    "image": "images/open-source-dynamic_rrt.gif",
+    "image_alt": "RRT star search tree growing around moving obstacles"
+  },
+  {
+    "name": "Peg-in-Hole",
+    "repository": "jeongeun980906/peg-in-hole",
+    "description": "Reinforcement learning experiments for peg insertion, exploring DQN, DDPG, PPO, recurrent policies, and hindsight experience replay.",
+    "topics": [
+      "Manipulation",
+      "Reinforcement Learning"
+    ],
+    "date": "2020-07-16",
+    "image": "images/open-source-peg-in-hole.png",
+    "image_alt": "Peg-in-hole reinforcement learning experiment"
+  }
+]
