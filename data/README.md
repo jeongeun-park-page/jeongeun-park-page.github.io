@@ -1,0 +1,11 @@
+Publication content lives in this directory. Each HTML file contains one original publication card, including its authors, media, and links.
+
+Edit `publications.json` to change the year, `tags` (zero to three per paper; use an empty list to omit a paper from the tag view), or `selected` flag. Papers appear in every matching tag section. The record order determines the order within each group and on the home page. Tag labels are defined in `scripts/build_publications.py`.
+
+After editing cards, metadata, or `templates/home.html`, run from the repository root:
+
+```sh
+python3 scripts/build_publications.py
+```
+
+Commit the generated `index.html`, `publications.html`, and `publications-by-topic.html` as well as the source changes. GitHub Pages serves these static files directly; no build dependencies or client-side rendering are needed.

@@ -1,0 +1,195 @@
+[
+  {
+    "id": "watch",
+    "year": 2026,
+    "selected": true,
+    "tags": [
+      "foundation",
+      "efficient"
+    ]
+  },
+  {
+    "id": "lala",
+    "year": 2026,
+    "selected": false,
+    "tags": [
+      "foundation",
+      "efficient"
+    ]
+  },
+  {
+    "id": "soul",
+    "year": 2026,
+    "selected": false,
+    "tags": [
+      "safety",
+      "foundation"
+    ]
+  },
+  {
+    "id": "recap",
+    "year": 2026,
+    "selected": true,
+    "tags": [
+      "foundation",
+      "efficient"
+    ]
+  },
+  {
+    "id": "spark",
+    "year": 2026,
+    "selected": true,
+    "tags": [
+      "foundation",
+      "efficient"
+    ]
+  },
+  {
+    "id": "grit",
+    "year": 2026,
+    "selected": false,
+    "tags": [
+      "manipulation"
+    ]
+  },
+  {
+    "id": "viugic",
+    "year": 2026,
+    "selected": false,
+    "tags": [
+      "manipulation",
+      "safety"
+    ]
+  },
+  {
+    "id": "trhi",
+    "year": 2026,
+    "selected": false,
+    "tags": [
+      "hri",
+      "humanoids"
+    ]
+  },
+  {
+    "id": "lego",
+    "year": 2026,
+    "selected": false,
+    "tags": [
+      "efficient",
+      "humanoids"
+    ]
+  },
+  {
+    "id": "thesis",
+    "year": 2026,
+    "selected": false,
+    "tags": []
+  },
+  {
+    "id": "vine",
+    "year": 2025,
+    "selected": false,
+    "tags": [
+      "foundation",
+      "safety"
+    ]
+  },
+  {
+    "id": "tobo",
+    "year": 2025,
+    "selected": true,
+    "tags": [
+      "foundation",
+      "efficient"
+    ]
+  },
+  {
+    "id": "molam",
+    "year": 2025,
+    "selected": true,
+    "tags": [
+      "foundation",
+      "hri"
+    ]
+  },
+  {
+    "id": "mask",
+    "year": 2025,
+    "selected": true,
+    "tags": [
+      "hri",
+      "foundation",
+      "humanoids"
+    ]
+  },
+  {
+    "id": "spots",
+    "year": 2024,
+    "selected": false,
+    "tags": [
+      "manipulation",
+      "hri"
+    ]
+  },
+  {
+    "id": "clara",
+    "year": 2024,
+    "selected": true,
+    "tags": [
+      "safety",
+      "hri"
+    ]
+  },
+  {
+    "id": "socrates",
+    "year": 2024,
+    "selected": false,
+    "tags": [
+      "navigation",
+      "hri"
+    ]
+  },
+  {
+    "id": "zavis",
+    "year": 2023,
+    "selected": false,
+    "tags": [
+      "navigation"
+    ]
+  },
+  {
+    "id": "robust",
+    "year": 2023,
+    "selected": false,
+    "tags": [
+      "safety"
+    ]
+  },
+  {
+    "id": "r3",
+    "year": 2022,
+    "selected": false,
+    "tags": [
+      "navigation",
+      "safety"
+    ]
+  },
+  {
+    "id": "gnn",
+    "year": 2022,
+    "selected": false,
+    "tags": [
+      "manipulation",
+      "efficient"
+    ]
+  },
+  {
+    "id": "teleoperation",
+    "year": 2022,
+    "selected": false,
+    "tags": [
+      "manipulation",
+      "hri"
+    ]
+  }
+]
