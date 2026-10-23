@@ -21,7 +21,7 @@ for record in records:
     assert all(tag in TAGS for tag in record['tags']), record['id']
 
 def navigation(active):
-    links = [('home', 'index.html', 'Home'), ('year', 'publications.html', 'By year'), ('topic', 'publications-by-topic.html', 'By tag'), ('open-source', 'open-source.html', 'Open Source')]
+    links = [('home', 'index.html', 'Home'), ('year', 'publications.html', 'By year'), ('topic', 'publications-by-topic.html', 'By tag'), ('open-source', 'open-source.html', 'Projects')]
     items = []
     for key, url, label in links:
         current = ' aria-current="page"' if key == active else ''
@@ -86,10 +86,10 @@ for project in projects:
         '</article>'
     )
 open_source = (
-    head.replace('<title>Jeongeun Park</title>', '<title>Open Source | Jeongeun Park</title>')
+    head.replace('<title>Jeongeun Park</title>', '<title>Open Sources &amp; Projects | Jeongeun Park</title>')
     + '<body>\n' + navigation('open-source')
     + '<main id="main-content" class="site-main"><section class="section"><div class="container is-max-desktop">'
-    + '<div class="section-heading"><h1 class="title is-2">Open Source</h1>'
+    + '<div class="section-heading"><h1 class="title is-2">Open Sources &amp; Projects</h1>'
     + '<a href="https://github.com/jeongeun980906">GitHub profile &rarr;</a></div>'
     + '<p class="publication-intro">Tools, tutorials, and reference implementations for robotics and machine learning. Code associated with my publications is not included here.</p>'
     + '<div class="open-source-grid">' + ''.join(project_cards) + '</div>'
